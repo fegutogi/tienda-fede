@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de tecnología y equipos reacondicionados">
+    <meta name="author" content="Federico Tortolero">
+    <title>Tienda de Fede - Reacondicionados</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fab fa-apple"></i> Tienda de Fede
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#productos-container">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li id="boton-carrito">
+                    <i class="fas fa-shopping-cart"></i> 
+                    <span id="contador-carrito">0</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Tecnología Premium.</h1>
+            <p>Precios inteligentes. Calidad garantizada.</p>
+        </section>
+
+        <section id="productos-container">
+            <p id="mensaje-carga">Cargando catálogo...</p>
+        </section>
+    </main>
+
+    <div id="modal-carrito" class="modal">
+        <div class="modal-content">
+            <span class="cerrar-modal">&times;</span>
+            <h2>Tu Compra</h2>
+            <ul id="lista-carrito">
+                </ul>
+            <div class="carrito-footer">
+                <p class="total">Total: $<span id="total-carrito">0.00</span></p>
+                <div class="acciones-carrito">
+                    <button id="vaciar-carrito" class="btn-danger">Vaciar</button>
+                    <button id="finalizar-compra" class="btn-success">Finalizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tienda de Fede. Todos los derechos reservados.</p>
+        <p>Desarrollado por <strong>Federico Tortolero</strong> - Comisión: <strong>C25226</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

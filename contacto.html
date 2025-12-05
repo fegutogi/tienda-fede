@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tienda de Fede</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para el formulario de contacto */
+        .form-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        form label { display: block; margin-bottom: 8px; font-weight: 500; }
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #d2d2d7;
+            border-radius: 12px;
+            font-size: 1rem;
+            background: #f5f5f7;
+        }
+        form button {
+            width: 100%;
+            padding: 15px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fab fa-apple"></i> Tienda de Fede
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Volver a la Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h1 style="text-align: center; margin-bottom: 30px;">Contacto</h1>
+            <p style="text-align: center; margin-bottom: 30px; color: #86868b;">¿Tienes dudas sobre un equipo? Escríbeme.</p>
+            
+            <form action="https://formspree.io/f/xnqewjzk" method="POST">
+                <label for="email">Tu Email</label>
+                <input type="email" id="email" name="email" required placeholder="nombre@ejemplo.com">
+                
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Hola, me interesa el monitor..."></textarea>
+                
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tienda de Fede. Todos los derechos reservados.</p>
+        <p>Desarrollado por <strong>Federico Tortolero</strong> - Comisión: <strong>C25226</strong></p>
+    </footer>
+</body>
+</html>
